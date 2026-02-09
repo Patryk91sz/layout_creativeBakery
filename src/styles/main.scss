@@ -1,7 +1,7 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@use 'utils/reset';
+@use 'utils/fonts';
+@use 'blocks/header';
 
 body {
-  background: $c-gray;
+  background: rgba(255, 238, 252, 1);
 }

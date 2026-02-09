@@ -6,6 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Title</title>
     <link
       rel="stylesheet"
@@ -13,7 +17,35 @@
     />
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
     <script src="src/scripts/main.js"></script>
+
+    <header class="header" id="close">
+      <a class="header__logo" href="#close">
+        <img width="128px" height="24px"
+        class="header__logo-icon" src="./src/images/header/logo.svg"
+        alt="BakerLab logo">
+      </a>
+      <a class="header__button" href="#menu">
+        <img width="20" height="8"
+        src="./src/images/header/menu.svg" alt="Open Menu"/>
+      </a>
+    </header>
+
+    <nav class="menu" id="menu">
+      <div class="menu__top">
+        <a class="menu__logo" href="#close">
+          <img width="128px" height="24px"
+          class="header__logo-icon" src="./src/images/header/logo.svg"
+          alt="BakerLab logo">
+        </a>
+        <a class="menu__close" href="#close"><img src="./src/images/header/close.svg" alt="Close Menu"/></a>
+      </div>
+      <ul class="menu__list fs-16-normal">
+        <li><a class="menu__list-link" href="#">Products</a></li>
+        <li><a class="menu__list-link" href="#">About Us</a></li>
+        <li><a class="menu__list-link" href="#">Blog</a></li>
+        <li><a class="menu__list-link menu__list-phone-link" href="#"><img src="./src/images/header/menu__phone.svg" alt="Phone Icon"/>Contact us</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
