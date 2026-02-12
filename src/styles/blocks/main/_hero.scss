@@ -1,0 +1,52 @@
+.hero {
+  &__text {
+    width: 313px;
+    padding: 32px 16px;
+    text-align: center;
+  }
+
+  &__title {
+    display: flex;
+    justify-self: center;
+
+    width: auto;
+    margin: 0 16px;
+
+    font-family: Inter, sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 85%;
+    color: #f9512e;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+
+    width: 288px;
+    height: 56px;
+    margin: 0 16px;
+    border: 2px solid #f9512e;
+    border-radius: 32px;
+
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: Medium;
+    line-height: 100%;
+    color: #f9512e;
+    text-transform: uppercase;
+    letter-spacing: 2%;
+  }
+}

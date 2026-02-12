@@ -1,0 +1,59 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  align-items: center;
+
+  padding: 64px 16px 72px;
+}
+
+.main {
+  padding-top: 64px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &-title {
+      color: rgba(249, 81, 46, 1);
+    }
+
+    &-text {
+      width: 288px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    align-items: center;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    width: 288px;
+
+    &-description {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    &-title {
+      color: rgba(127, 128, 150, 1);
+    }
+
+    &-button {
+      display: flex;
+      gap: 8px;
+      align-self: flex-start;
+      color: rgba(249, 81, 46, 1);
+    }
+  }
+}
