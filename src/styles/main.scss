@@ -8,6 +8,9 @@
 @use 'blocks/main/about';
 @use 'blocks/main/stats';
 
+@use 'blocks/footer/footer';
+@use 'blocks/footer/menu';
+
 body {
   background: rgba(255, 238, 252, 1);
 }
