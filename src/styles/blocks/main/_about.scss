@@ -1,0 +1,14 @@
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 16px;
+
+  &__title {
+    color: #f9512e;
+  }
+
+  &__text {
+    color: #1c1a26;
+  }
+}
