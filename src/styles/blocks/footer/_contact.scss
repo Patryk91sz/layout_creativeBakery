@@ -36,4 +36,15 @@
       text-decoration: none;
     }
   }
+
+  &__social {
+    &-container {
+      display: flex;
+      gap: 34px;
+    }
+  }
+
+  &__copyright {
+    color: rgba(127, 128, 150, 1);
+  }
 }

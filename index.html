@@ -43,10 +43,14 @@
         <a class="menu__close" href="#close"><img src="./src/images/header/close.svg" alt="Close Menu"/></a>
       </div>
       <ul class="menu__list fs-16-normal">
-        <li><a class="menu__list-link" href="#">Products</a></li>
-        <li><a class="menu__list-link" href="#">About Us</a></li>
-        <li><a class="menu__list-link" href="#">Blog</a></li>
-        <li><a class="menu__list-link menu__list-phone-link" href="#"><img src="./src/images/header/menu__phone.svg" alt="Phone Icon"/>Contact us</a></li>
+        <li><a class="menu__list-link" href="#products">Products</a></li>
+        <li><a class="menu__list-link" href="#about">About Us</a></li>
+        <li><a class="menu__list-link" href="#blog">Blog</a></li>
+        <li>
+          <a class="menu__list-link menu__list-phone-link" href="#contact">
+            <img src="./src/images/header/menu__phone.svg" alt="Phone Icon"/>Contact us
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -74,7 +78,7 @@
         </a>
       </section>
 
-      <section class="main-section">
+      <section id="products" class="main-section">
         <div class="main__description">
           <h3 class="main__description-title h3-48-400">What we bake</h3>
           <p class="main__description-text fs-16-normal">We can customize our cookies right for your needs. Just imagine it</p>
@@ -161,7 +165,7 @@
         </div>
       </section>
 
-      <article class="aboutUs">
+      <article id="about" class="aboutUs">
         <h3 class="aboutUs__title h3-48-400">Few words About us</h3>
         <p class="aboutUs__text fs-16-normal">Like many design teams, Onfido made the transition from Abstract + Sketch, to Figma in the last couple of years. One of the common resistance points internally before making that switch, was Figma’s lack of Git-style branching that Abstract enabled. The design team had come to rely on branching and had built a lot of our processes around it.</p>
       </article>
@@ -198,21 +202,21 @@
         <p class="footer__menu-title h4-16-500">Menu</p>
         <ul class="footer__menu-list">
           <li >
-            <a class="footer__menu-link h4-16-400" href="#">Products</a>
+            <a class="footer__menu-link h4-16-400" href="#products">Products</a>
           </li>
           <li >
-            <a class="footer__menu-link h4-16-400" href="#">About Us</a>
+            <a class="footer__menu-link h4-16-400" href="#about">About Us</a>
           </li>
           <li >
-            <a class="footer__menu-link h4-16-400" href="#">Blog</a>
+            <a class="footer__menu-link h4-16-400" href="#blog">Blog</a>
           </li>
           <li >
-            <a class="footer__menu-link h4-16-400" href="#">Terms & Privacy</a>
+            <a class="footer__menu-link h4-16-400" href="#terms">Terms & Privacy</a>
           </li>
         </ul>
       </nav>
 
-      <section class="contactUs">
+      <section id="contact" class="contactUs">
         <h3 class="contactUs__title h3-48-400">Contact us</h3>
         <address class="contactUs__call">
           <p class="contactUs__call-title h4-16-500">Call us</p>
@@ -228,10 +232,32 @@
             </li>
           </ul>
         </address>
-        <address class="contactUs__email">
+
+        <address id="terms" class="contactUs__email">
           <p class="contactUs__email-title h4-16-500">Email us</p>
           <a class="contactUs__email-link h4-16-400" href="mailto:bakerlab@example.com">bakerlab@example.com</a>
         </address>
+
+        <section class="contactUs__social">
+          <div class="contactUs__social-container">
+            <a href="https://facebook.com" target="_blank"
+            rel="noopener">
+              <img width="10.5" height="20"
+              src="./src/images/facebook_logo.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank"
+            rel="noopener">
+              <img width="20" height="20"
+              src="./src/images/instagram_logo.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com" target="_blank"
+            rel="noopener">
+              <img width="20.38" height="16.57"
+              src="./src/images/twitter_logo.svg" alt="Twitter">
+            </a>
+          </div>
+        </section>
+        <p class="contactUs__copyright">© Bakerlab 2022</p>
       </section>
     </footer>
   </body>
