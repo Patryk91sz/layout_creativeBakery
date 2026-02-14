@@ -1,17 +1,17 @@
+@use '../utils/mixins' as *;
+
 .header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  display: flex;
+  justify-content: space-between;
   padding: 16px 16px 20px 20px;
 
-  &__logo {
-    grid-column: 1;
-  }
-
   &__button {
-    grid-column: -1 / -1;
     width: 20px;
     height: 8px;
+  }
+
+  @include tablet {
+    padding: 16px 18px 20px 20px;
   }
 }
 

@@ -1,3 +1,5 @@
+@use '../../utils/mixins' as *;
+
 .main-section {
   display: flex;
   flex-direction: column;
@@ -5,10 +7,16 @@
   align-items: center;
 
   padding: 64px 16px 72px;
+  @include tablet {
+    padding: 64px 16px 72px;
+  }
 }
 
 .main {
-  padding-top: 64px;
+  padding: 64px 16px 72px;
+  @include tablet {
+    padding: 64px 44px 72px;
+  }
 
   &__description {
     display: flex;
