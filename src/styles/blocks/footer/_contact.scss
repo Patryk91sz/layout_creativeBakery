@@ -1,0 +1,39 @@
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  &__title {
+    color: rgba(255, 255, 255, 1);
+  }
+  &__call {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &-title {
+      color: rgba(127, 128, 150, 1);
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      list-style: none;
+      &-link {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  &__email {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &-title {
+      color: rgba(127, 128, 150, 1);
+    }
+    &-link {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+    }
+  }
+}
