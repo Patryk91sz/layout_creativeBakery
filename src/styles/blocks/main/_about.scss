@@ -6,11 +6,26 @@
   gap: 32px;
   margin: 0 16px;
 
+  @include tablet {
+    flex-direction: row;
+    gap: 24px;
+    margin: 0 44px;
+  }
+
   &__title {
     color: #f9512e;
+
+    @include tablet {
+      width: 328px;
+      letter-spacing: -1px;
+    }
   }
 
   &__text {
     color: #1c1a26;
+
+    @include tablet {
+      width: 328px;
+    }
   }
 }
