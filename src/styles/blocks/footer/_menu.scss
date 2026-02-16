@@ -1,8 +1,16 @@
+@use '../../utils/mixins' as *;
+
 .footer__menu {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-content: flex-start;
+
+  @include tablet {
+    width: 328px;
+    grid-column: 1 / 4;
+  }
+
   &-list {
     display: flex;
     flex-direction: column;
