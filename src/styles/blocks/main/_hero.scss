@@ -6,8 +6,8 @@
   }
   &__text {
     width: 281px;
-    padding: 32px 16px;
     text-align: center;
+
     @include tablet {
       padding: 0;
       padding-bottom: 16px;
@@ -18,9 +18,6 @@
     display: flex;
     justify-self: center;
 
-    width: auto;
-    margin: 0 16px;
-
     font-family: Inter, sans-serif;
     font-size: 64px;
     font-weight: 400;
@@ -29,11 +26,14 @@
     color: #f9512e;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 32px;
 
     @include tablet {
       z-index: 1;
       position: absolute;
-      top: 44%;
+      top: 37%;
+      font-size: 79px;
+      padding-top: 0;
     }
   }
 
@@ -67,6 +67,7 @@
 
     @include tablet {
       width: 364px;
+      margin-top: 80px;
     }
   }
 }
