@@ -5,8 +5,14 @@
   flex-direction: column;
   gap: 56px;
   padding: 64px 16px 72px;
+
   @include tablet {
     padding: 228px 44px 152px;
+  }
+
+  @include desktop1024 {
+    gap: 80px;
+    padding: 152px 44px 178px;
   }
 }
 
@@ -33,10 +39,20 @@
     align-items: center;
 
     @include tablet {
-      justify-content: center;
       flex-flow: row wrap;
       gap: 24px;
       row-gap: 80px;
+      &-cakes {
+        justify-content: flex-start;
+      }
+
+      &-donuts {
+        justify-content: flex-end;
+      }
+
+      &-cookies {
+        justify-content: flex-start;
+      }
     }
   }
 

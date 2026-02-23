@@ -4,8 +4,8 @@
   }
 }
 
-@mixin desktop1200 {
-  @media (min-width: 1200px) {
+@mixin desktop1024 {
+  @media (min-width: 1024px) {
     @content;
   }
 }

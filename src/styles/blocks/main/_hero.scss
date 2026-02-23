@@ -6,25 +6,24 @@
   padding: 0 16px;
 
   @include tablet {
-    padding: 0 44px;
+    padding: 80px 44px 0;
     position: relative;
   }
 
-  @include desktop1200 {
+  @include desktop1024 {
     padding: 0 44px 64px;
   }
   &__text {
     width: 281px;
     text-align: center;
-    place-self: center;
+    align-self: flex-start;
 
     @include tablet {
-      padding-bottom: 16px;
+      text-align: left;
     }
 
-    @include desktop1200 {
+    @include desktop1024 {
       align-self: flex-start;
-      text-align: left;
       position: absolute;
       top: 22%;
       width: 260px;
@@ -50,12 +49,13 @@
     @include tablet {
       z-index: 1;
       position: absolute;
-      top: 29%;
-      font-size: 79px;
+      top: 45%;
+      font-size: 80px;
       padding-top: 0;
+      letter-spacing: 0;
     }
 
-    @include desktop1200 {
+    @include desktop1024 {
       letter-spacing: -3px;
       font-size: 136px;
       top: 35%;
@@ -67,6 +67,10 @@
     justify-content: center;
     align-self: center;
     width: auto;
+
+    @include tablet {
+      padding: 16px 0 80px;
+    }
   }
 
   &__button {
@@ -91,11 +95,10 @@
     text-decoration: none;
 
     @include tablet {
-      width: 364px;
-      margin-top: 80px;
+      width: 326px;
     }
 
-    @include desktop1200 {
+    @include desktop1024 {
       width: 260px;
       margin: 0;
       position: absolute;

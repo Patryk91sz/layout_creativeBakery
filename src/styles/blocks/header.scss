@@ -9,7 +9,7 @@
     width: 20px;
     height: 8px;
 
-    @include desktop1200 {
+    @include desktop1024 {
       display: none;
     }
   }
@@ -18,7 +18,7 @@
     padding: 16px 18px 20px 20px;
   }
 
-  @include desktop1200 {
+  @include desktop1024 {
     padding: 32px 32px 28px 36px;
   }
 }
@@ -45,7 +45,7 @@
     transform: translateX(0);
   }
 
-  @include desktop1200 {
+  @include desktop1024 {
     position: static;
     transform: translate(0);
     height: auto;
@@ -57,7 +57,7 @@
     display: flex;
     justify-content: space-between;
 
-    @include desktop1200 {
+    @include desktop1024 {
       display: none;
     }
   }
@@ -71,7 +71,7 @@
 
     list-style: none;
 
-    @include desktop1200 {
+    @include desktop1024 {
       flex-direction: row;
       gap: 64px;
     }
