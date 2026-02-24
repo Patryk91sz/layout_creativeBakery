@@ -11,7 +11,7 @@
   }
 
   @include desktop1024 {
-    padding: 0 44px 64px;
+    padding: 0 44px 66px;
   }
   &__text {
     width: 281px;
@@ -25,13 +25,14 @@
     @include desktop1024 {
       align-self: flex-start;
       position: absolute;
-      top: 22%;
+      top: 20.7%;
       width: 260px;
       padding: 0;
     }
   }
 
   &__title {
+    width: auto;
     display: flex;
     place-self: center;
 
@@ -52,13 +53,11 @@
       top: 45%;
       font-size: 80px;
       padding-top: 0;
-      letter-spacing: 0;
     }
 
     @include desktop1024 {
-      letter-spacing: -3px;
-      font-size: 136px;
-      top: 35%;
+      font-size: clamp(111px, 10.5vw, 136px);
+      top: 32%;
     }
   }
 
@@ -103,7 +102,7 @@
       margin: 0;
       position: absolute;
       left: 44px;
-      bottom: 26.5%;
+      bottom: 37.5%;
     }
   }
 }
