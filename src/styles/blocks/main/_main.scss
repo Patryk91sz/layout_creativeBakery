@@ -60,18 +60,12 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    align-items: center;
-
-    width: 288px;
-
-    @include tablet {
-      width: 328px;
-    }
+    width: auto;
 
     &-description {
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 8px;
     }
 
     &-title {
@@ -81,6 +75,14 @@
     &-text {
       width: 280px;
       letter-spacing: -0.5px;
+
+      @include tablet {
+        width: 320px;
+      }
+
+      @include desktop1024 {
+        width: 380px;
+      }
     }
 
     &-button {
