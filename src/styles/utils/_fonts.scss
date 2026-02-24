@@ -16,8 +16,13 @@
   font-style: normal;
   line-height: 85%;
   text-transform: uppercase;
+
   @include tablet {
     font-size: 56px;
+  }
+
+  @include desktop1024 {
+    font-size: 72px;
   }
 }
 

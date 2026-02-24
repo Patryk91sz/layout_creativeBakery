@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 48px;
-  width: auto;
+  width: 100%;
 
   @include tablet {
     flex-flow: row wrap;
@@ -25,7 +25,8 @@
     }
 
     @include desktop1024 {
-      width: 216px;
+      min-width: 216px;
+      width: 23%;
     }
 
     &-number {
