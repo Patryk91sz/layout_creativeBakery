@@ -14,4 +14,11 @@
     gap: 40px 24px;
     padding: 88px 44px;
   }
+
+  @include desktop1024 {
+    margin: 0 auto;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 40px 24px;
+    padding: 88px 44px;
+  }
 }

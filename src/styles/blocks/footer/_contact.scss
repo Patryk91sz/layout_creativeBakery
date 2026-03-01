@@ -9,6 +9,10 @@
     @include tablet {
       width: 328px;
     }
+
+    @include desktop1024 {
+      width: 450px;
+    }
   }
 
   &__call {
@@ -78,6 +82,12 @@
   flex-direction: column;
   gap: 40px;
   @include tablet {
+    grid-column: 5 / 8;
+  }
+
+  @include desktop1024 {
+    max-width: 1200px;
+    flex-direction: row;
     grid-column: 5 / 8;
   }
 }
