@@ -11,8 +11,13 @@
   }
 
   @include desktop1024 {
-    padding: 0 44px 66px;
+    padding: 0 44px;
   }
+
+  @include desktop1200 {
+    padding: 0 124px;
+  }
+
   &__text {
     width: 281px;
     text-align: center;
@@ -25,9 +30,14 @@
     @include desktop1024 {
       align-self: flex-start;
       position: absolute;
-      top: 20.7%;
+      top: 24.5%;
       width: 260px;
       padding: 0;
+    }
+
+    @include desktop1200 {
+      width: 290px;
+      top: 23%;
     }
   }
 
@@ -56,8 +66,13 @@
     }
 
     @include desktop1024 {
-      font-size: clamp(111px, 10.5vw, 136px);
-      top: 32%;
+      font-size: clamp(111px, 11vw, 136px);
+      top: 39%;
+    }
+
+    @include desktop1200 {
+      font-size: clamp(112px, 9.4vw, 144px);
+      top: 39%;
     }
   }
 
@@ -69,6 +84,10 @@
 
     @include tablet {
       padding: 16px 0 80px;
+    }
+
+    @include desktop1024 {
+      padding: 0;
     }
   }
 
@@ -102,7 +121,14 @@
       margin: 0;
       position: absolute;
       left: 44px;
-      bottom: 37.5%;
+      bottom: 32%;
+    }
+
+    @include desktop1200 {
+      width: 280px;
+      margin: 0;
+      left: 124px;
+      bottom: 22%;
     }
   }
 }

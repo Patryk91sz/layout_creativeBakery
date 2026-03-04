@@ -14,6 +14,11 @@
     gap: 80px;
     padding: 152px 44px 178px;
   }
+
+  @include desktop1024 {
+    gap: 80px;
+    padding: 152px 124px 178px;
+  }
 }
 
 .main {
