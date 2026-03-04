@@ -26,6 +26,14 @@
     background-image: url(../images/Crumbs-1200.png);
     background-position: 71% 10%;
   }
+
+  @include desktop1200 {
+    gap: 144px;
+    height: 750px;
+    padding: 0 124px 56px;
+    background-image: url(../images/Crumbs-1200.png);
+    background-position: 75% 0;
+  }
 }
 
 .aboutUs {
@@ -64,6 +72,10 @@
 
     @include desktop1024 {
       max-width: 544px;
+    }
+
+    @include desktop1200 {
+      max-width: 584px;
     }
   }
 }
