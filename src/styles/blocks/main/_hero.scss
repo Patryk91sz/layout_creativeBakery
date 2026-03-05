@@ -66,7 +66,7 @@
     }
 
     @include desktop1024 {
-      font-size: clamp(111px, 11vw, 136px);
+      font-size: clamp(111px, 11vw, 120px);
       top: 39%;
     }
 
@@ -122,6 +122,32 @@
       position: absolute;
       left: 44px;
       bottom: 32%;
+      &:hover,
+      &:focus {
+        background-color: rgba(249, 81, 46, 1);
+        color: rgba(255, 255, 255, 1);
+        border-bottom: 2px solid white;
+
+        .hero__button-icon {
+          filter: brightness(0) invert(1);
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 130px;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 1);
+        bottom: 9px;
+        left: 27%;
+        transform: scaleX(0);
+      }
+
+      &:hover::after,
+      &:focus::after {
+        transform: scaleX(1);
+      }
     }
 
     @include desktop1200 {
