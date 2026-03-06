@@ -15,7 +15,7 @@
     padding: 152px 44px 178px;
   }
 
-  @include desktop1024 {
+  @include desktop1200 {
     gap: 80px;
     padding: 152px 124px 178px;
   }
@@ -66,6 +66,16 @@
     flex-direction: column;
     gap: 16px;
     width: auto;
+
+    @include desktop1024 {
+      &-picture {
+        transition: transform 0.3s ease;
+        &:hover,
+        &:focus {
+          transform: scale(1.08);
+        }
+      }
+    }
 
     &-description {
       display: flex;

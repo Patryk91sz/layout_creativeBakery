@@ -75,6 +75,15 @@
     display: flex;
     gap: 34px;
   }
+
+  @include desktop1024 {
+    &__link {
+      &:hover,
+      &:focus {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
 }
 
 .contact {
