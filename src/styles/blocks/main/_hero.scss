@@ -11,6 +11,7 @@
   }
 
   @include desktop1024 {
+    height: 612px;
     padding: 0 44px;
   }
 
@@ -66,7 +67,7 @@
     }
 
     @include desktop1024 {
-      font-size: clamp(111px, 11vw, 120px);
+      font-size: 111px;
       top: 39%;
     }
 
